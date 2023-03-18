@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import './components/style.css';
+import './components/media-queries.css';
+import countries from './components/data/data';
+import Header from './components/Header';
+import Card from './components/Card';
+import Button from './components/Button';
+import {useState} from 'react';
 
-function App() {
+const App = () => {
+  const [cards, setCards] = useState(countries);
+  const removeCard = countryName =>{
+    const newList = cards.filter(card => card.name !== countryName);
+    setCards(newList);
+  }
+
+  const refreshApp = () =>{
+    setCards(countries);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="header">
+        <Header />
       </header>
+      <main className="main">
+        {
+          cards.length ? 
+          cards.map(card => <Card {...card} onClick={() => removeCard(card.name)} />) :
+          <Button text="Refresh" className="refresh-btn" onClick={refreshApp} />
+        }
+      </main>
     </div>
   );
 }

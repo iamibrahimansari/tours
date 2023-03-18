@@ -1,0 +1,102 @@
+header{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.title{
+    font-size: 4rem;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    color:#205353;
+}
+
+.line{
+    width: 10%;
+    margin: auto;
+    height: 0.5rem;
+    background-color: green;
+    border: none;
+}
+
+.card{
+    background-color: #fff;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-container{
+    height: 35rem;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.about-container{
+    padding: 3.5rem 2.5rem;
+    color: #444;
+}
+
+.subtitle{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.para{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #797777;
+}
+
+button{
+    border: 1px solid green;
+    background-color: #fff;
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    color: green;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: green;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.price{
+    background-color: green;
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0.7rem 1rem;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    letter-spacing: 1px;
+}
+
+.refresh-btn, .read-btn{
+    background-color: green;
+    color: #fff;
+}
+
+.refresh-btn{
+    width: 26%;
+    margin-top: -10px;
+    grid-column: 2/3;
+    justify-self: center;
+}
+
+.read-btn{
+    background-color: pink;
+    color: #444;
+    border: none;
+    margin-bottom: 2rem;
+}
