@@ -26,7 +26,9 @@ const App = () => {
       <main className="main">
         {
           cards.length ? 
-          cards.map(card => <Card {...card} onClick={() => removeCard(card.name)} />) :
+          <div className="cards">
+            {cards.map(card => <Card {...card} onClick={() => removeCard(card.name)} />)}
+          </div> :
           <Button text="Refresh" className="refresh-btn" onClick={refreshApp} />
         }
       </main>

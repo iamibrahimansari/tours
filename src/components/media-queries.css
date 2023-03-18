@@ -11,7 +11,7 @@
 }
 
 @media screen and (max-width: 900px){
-    main{
+    .cards{
         grid-template-columns: repeat(2, 1fr);
     }
     .App{
@@ -35,7 +35,7 @@
     .App{
         width: 65%;
     }
-    main{
+    .cards{
         grid-template-columns: 1fr;
     }
 }

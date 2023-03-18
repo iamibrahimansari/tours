@@ -11,7 +11,7 @@ header{
 }
 
 .line{
-    width: 10%;
+    width: 13rem;
     margin: auto;
     height: 0.5rem;
     background-color: green;
@@ -87,11 +87,13 @@ button:hover{
     color: #fff;
 }
 
+main{
+    text-align: center;
+}
+
 .refresh-btn{
-    width: 26%;
+    width: 10rem;
     margin-top: -10px;
-    grid-column: 2/3;
-    justify-self: center;
 }
 
 .read-btn{

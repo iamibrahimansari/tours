@@ -3,7 +3,7 @@
   margin: 8rem auto;
 }
 
-main{
+.cards{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
